@@ -26,7 +26,6 @@ chrome.alarms.onAlarm.addListener((alarm) => {
             if (tabs.length > 0) {
                 chrome.tabs.reload(tabs[0].id);
             } else {
-                rewardElement.textContent = `Daily quest already claimed today.`;
                 chrome.tabs.create({ url: "https://www.google.com" });
             }
         })}});
