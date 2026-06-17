@@ -17,7 +17,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 
 //Alarms
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.alarms.create('dailyQuestAlarm', { periodInMinutes: 0.5 }); // 24 hours = 1440 minutes
+    chrome.alarms.create('dailyQuestAlarm', { periodInMinutes: 1440 }); // 24 hours = 1440 minutes
 });
 chrome.alarms.onAlarm.addListener((alarm) => {
     if (alarm.name === 'dailyQuestAlarm') {
