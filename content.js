@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 success: true
             });
 
-            console.log(`Daily quest claimed successfully: ${rewardText}`);
+            console.log(`Daily quest claimed successfully: ${rewardText}, on ${today} at ${new Date().toLocaleTimeString()}`);
         }, 1000);
     }, 1500);
 });
