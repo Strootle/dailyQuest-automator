@@ -1,4 +1,43 @@
 body {
-  width: 320px;
-  min-height: 200px;
+  width: 400px;
+  min-height: 250px;
+  background-color: #003747;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #06768d;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  
+.daily-btn {
+    position: relative;
+}
+
 }
