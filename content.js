@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        button.click(); //Automatically click the daily quest button (CHANGE TO MANUAL CLICK LATER)
+        //button.click(); //Automatically click the daily quest button 
+        //manual button click event listener
+        button.addEventListener('click', () => {
 
         //Wait for result and scrape reward text
         setTimeout(() => {
@@ -44,5 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             console.log(`Daily quest claimed successfully: ${rewardText}, on ${today} at ${new Date().toLocaleTimeString()}`);
         }, 1000);
+        });
     }, 1500);
 });
