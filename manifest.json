@@ -22,7 +22,10 @@
             "js": ["content.js"],
             "css": ["styles.css"],
             "matches": ["<all_urls>"]
-
         }
-    ]
+    ],
+    "icons": {
+        "16": "icons/treasure-chest_16.png",
+        "128": "icons/treasure-chest_128.png"
+    }
 }
